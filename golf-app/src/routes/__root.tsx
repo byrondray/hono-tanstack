@@ -20,7 +20,7 @@ function Root() {
   return (
     <>
       <NavBar />
-      <Outlet /> 
+      <Outlet />
       <TanStackRouterDevtools />
     </>
   );
@@ -33,8 +33,11 @@ function NavBar() {
         <Link to='/' className='[&.active]:font-bold'>
           Home
         </Link>
-        <Link to='/' className='[&.active]:font-bold'>
-          About
+        <Link to='/friends' className='[&.active]:font-bold'>
+          Friends
+        </Link>
+        <Link to='/roundHistory' className='[&.active]:font-bold'>
+          Rounds
         </Link>
         <Link to='/profile' className='[&.active]:font-bold'>
           Profile
